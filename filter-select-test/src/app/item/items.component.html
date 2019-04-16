@@ -1,0 +1,16 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+
+    <FilterSelect 
+        height="100%"
+        [items]="items"
+        (change)="onitemselected($event)"
+        hint="Please select some items"
+        multiple="false"
+        modal_title="item" search_param="name" 
+        primary_key="id">
+    </FilterSelect>
+
+</StackLayout>
